@@ -18,7 +18,7 @@ namespace ProjectEuler
 
             return 0;
         }
-
+        // TODO finish knapsack problem
         public static double Knapsack(double[] val, double[] wt, double lim)
         {
             int N = wt.Length;
@@ -30,7 +30,8 @@ namespace ProjectEuler
                 V[0,col] = 0;
             }
 
-            for (int row = 0; row < N; row++) {
+            for (int row = 0; row < N; row++)
+            {
                 V[row, 0] = 0;
             }
 
@@ -48,19 +49,9 @@ namespace ProjectEuler
                     }
 
                 }
-
             }
 
-            foreach(int rows in V)
-            {
-                foreach(col in rows)
-                {
-                    Console.Write(col);
-                }
-                Console.WriteLine();
-            }
-
-            return 0;
+            return 0;   // TODO replace dummy return variable
         }
 
         /*
