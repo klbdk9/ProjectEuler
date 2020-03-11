@@ -6,7 +6,7 @@ namespace ProjectEuler
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Solutions1to25.BestChoice());
+            Console.WriteLine(Solutions1to25.P16());
             Console.WriteLine("Done");
             Console.ReadKey();
         }
